@@ -10,7 +10,7 @@
     "dev": "tsc --noEmit -w --preserveWatchOutput",
     "db:push": "drizzle-kit push",
     "db:up": "drizzle-kit up",
-    "db:generate": "npm run build && drizzle-kit generate",
+    "db:generate": "drizzle-kit generate",
     "db:pull": "drizzle-kit introspect",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
