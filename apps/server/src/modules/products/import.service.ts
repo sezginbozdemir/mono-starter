@@ -1,4 +1,4 @@
-import { parseCsv } from "./csv.parser.js";
+import { parseCsv } from "@repo/shared/parser";
 import type { ImportResult, ImportOptions } from "./product.entity.js";
 import { ProductRepository } from "./product.repository.js";
 import { ProductTransformer } from "./product.transformer.js";

@@ -32,7 +32,8 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.log
+*.log
+logs/
 
 # Misc
 .DS_Store

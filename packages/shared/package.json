@@ -2,7 +2,8 @@
   "name": "@repo/shared",
   "version": "1.0.0",
   "exports": {
-    "./logger": "./src/logger/index.ts"
+    "./logger": "./src/logger/index.ts",
+    "./parser": "./src/parser/index.ts"
   },
   "scripts": {
     "dev": "tsc --noEmit -w --preserveWatchOutput"
@@ -12,6 +13,8 @@
     "tsx": "^4.20.3",
     "typescript": "5.8.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "papaparse": "^5.5.3"
+  },
   "license": "ISC"
 }
