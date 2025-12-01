@@ -1,0 +1,32 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./drizzle/*": "./drizzle/*.ts",
+    "./supabase/*": "./supabase/*.ts"
+  },
+  "scripts": {
+    "dev": "tsc --noEmit -w --preserveWatchOutput",
+    "db:push": "drizzle-kit push",
+    "db:up": "drizzle-kit up",
+    "db:generate": "npm run build && drizzle-kit generate",
+    "db:pull": "drizzle-kit introspect",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "generate:component": "turbo gen react-component"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.3",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.52.1",
+    "@types/pg": "^8.15.5",
+    "drizzle-orm": "^0.44.4",
+    "pg": "^8.16.3"
+  }
+}
