@@ -13,8 +13,7 @@
     "db:generate": "drizzle-kit generate",
     "db:pull": "drizzle-kit introspect",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio",
-    "generate:component": "turbo gen react-component"
+    "db:studio": "drizzle-kit studio"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
